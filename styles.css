@@ -1,4 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
+    overflow: hidden;
+}
+
+.backgroundHome{
+    background-image: url('images/index-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+}
+
+/* index styles */
+
+.navbar {
+    background-color: #F5E6A3;
+    padding: 15px 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 70px;
+    height: 40px;
+}
+
+.logo-text {
+    color: #8B4513;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 200px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2E572B;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #CD853F;
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotate(-15deg);
+    }
+    25% {
+        transform: rotate(-10deg); /* Draai iets naar rechts */
+    }
+    50% {
+        transform: rotate(-15deg); /* Terug naar de originele positie */
+    }
+    75% {
+        transform: rotate(-20deg); /* Draai iets naar links */
+    }
+    100% {
+        transform: rotate(-15deg); /* Terug naar de originele positie */
+    }
+}
+
+.bestelNu {
+    transform: rotate(-10deg);
+    position: fixed; /* Fixed zorgt voor consistente positionering relatief aan viewport */
+    width: 12rem; /* rem units schalen beter dan pixels */
+    height: auto;
+    cursor: pointer;
+    animation: wobble 4s ease-in-out infinite;
+    /* Gebruik percentage van viewport voor stabiele positionering */
+    top: 20vh;
+    right: 25vw;
+    /* Zorg dat de button niet buiten het scherm valt */
+    max-width: 25vw;
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .bestelNu {
+        width: 14rem;
+        right: 23vw;
+        top: 18vh;
+    }
+}
+
+/* Desktop */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .bestelNu {
+        width: 12rem;
+        right: 18vw;
+        top: 20vh;
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) and (min-width: 769px) {
+    .bestelNu {
+        width: 10rem;
+        right: 15vw;
+        top: 22vh;
+    }
+}
+
+/* Mobile landscape */
+@media (max-width: 768px) and (min-width: 481px) {
+    .bestelNu {
+        width: 8rem;
+        right: 12vw;
+        top: 25vh;
+    }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+    .bestelNu {
+        width: 6rem;
+        right: 8vw;
+        top: 28vh;
+        max-width: 30vw; /* Voorkom dat button te groot wordt op kleine schermen */
+    }
 }
