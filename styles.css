@@ -5,10 +5,12 @@
 }
 
 body{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand Medium', sans-serif;
     font-weight: 500;
     overflow: hidden;
 }
+
+/* home pagina styles */
 
 .backgroundHome{
     background-image: url('images/index-background.jpg');
@@ -23,10 +25,8 @@ body{
     left: 0;
 }
 
-/* index styles */
-
 .navbar {
-    background-color: #F5E6A3;
+    background-color: #FFF3B9;
     padding: 15px 20%;
     display: flex;
     justify-content: space-between;
@@ -41,12 +41,6 @@ body{
 .logo-icon {
     width: 70px;
     height: 40px;
-}
-
-.logo-text {
-    color: #8B4513;
-    font-size: 20px;
-    font-weight: bold;
 }
 
 .nav-links {
@@ -64,38 +58,38 @@ body{
 }
 
 .nav-links a:hover {
-    color: #CD853F;
+    color: #F2BA00;
 }
+
+/* bestel nu button */
 
 @keyframes wobble {
     0% {
         transform: rotate(-15deg);
     }
     25% {
-        transform: rotate(-10deg); /* Draai iets naar rechts */
+        transform: rotate(-10deg);
     }
     50% {
-        transform: rotate(-15deg); /* Terug naar de originele positie */
+        transform: rotate(-15deg);
     }
     75% {
-        transform: rotate(-20deg); /* Draai iets naar links */
+        transform: rotate(-20deg);
     }
     100% {
-        transform: rotate(-15deg); /* Terug naar de originele positie */
+        transform: rotate(-15deg);
     }
 }
 
 .bestelNu {
     transform: rotate(-10deg);
-    position: fixed; /* Fixed zorgt voor consistente positionering relatief aan viewport */
-    width: 12rem; /* rem units schalen beter dan pixels */
+    position: fixed;
+    width: 12rem;
     height: auto;
     cursor: pointer;
     animation: wobble 4s ease-in-out infinite;
-    /* Gebruik percentage van viewport voor stabiele positionering */
     top: 20vh;
     right: 25vw;
-    /* Zorg dat de button niet buiten het scherm valt */
     max-width: 25vw;
 }
 
@@ -141,6 +135,53 @@ body{
         width: 6rem;
         right: 8vw;
         top: 28vh;
-        max-width: 30vw; /* Voorkom dat button te groot wordt op kleine schermen */
+        max-width: 30vw;
     }
+}
+
+/* product pagina styles */
+
+.backgroundProduct{
+    background-image: url('images/Limoncello_Mockup.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 50px;
+    left: 0;
+}
+
+.product-container {
+    position: absolute;
+    color: #2E572B;
+    top: 20vh;
+    right: 20vw;
+    width: 300px;
+    padding: 20px;
+}
+
+.cta-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3C8A3B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #F2BA00;
+}
+
+.productInfo-container {
+    position: absolute;
+    color: #2E572B;
+    bottom: 20vh;
+    left: 20vw;
+    width: 400px;
+    padding: 20px;
 }
