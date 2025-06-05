@@ -185,3 +185,103 @@ body{
     width: 400px;
     padding: 20px;
 }
+
+/* recepten styles */
+
+.backgroundRecepten {
+    background-image: url('images/BackgroundRecepten.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 25px;
+    left: 0;
+}
+
+.recepten-container {
+    position: absolute;
+    color: #2E572B;
+    top: 20vh;
+    left: 20vw;
+    width: 400px;
+    padding: 20px;
+}
+
+/* recepten kader */
+
+.recepten-box {
+    position: absolute;
+    top: 30vh;
+    left: 21vw;
+    width: 55vw;
+    height: 40vh;
+    background-color: #FFF3B9;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-content {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.text-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #2E572B;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3C8A3B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #F2BA00;
+}
+
+.indicator-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #96d195;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: #3C8A3B;
+}
+
+.flexboxRecepten {
+    display: flex;
+    gap: 20px;
+}
+
+.flexboxRecepten div {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
