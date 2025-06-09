@@ -4,21 +4,22 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Quicksand Medium', sans-serif;
     font-weight: 500;
     overflow: hidden;
+    background: #FFF3B9;
 }
 
 /* home pagina styles */
 
-.backgroundHome{
+.backgroundHome {
     background-image: url('images/index-background.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
-    
+
     position: fixed;
     z-index: -10;
     top: 0;
@@ -67,15 +68,19 @@ body{
     0% {
         transform: rotate(-15deg);
     }
+
     25% {
         transform: rotate(-10deg);
     }
+
     50% {
         transform: rotate(-15deg);
     }
+
     75% {
         transform: rotate(-20deg);
     }
+
     100% {
         transform: rotate(-15deg);
     }
@@ -141,7 +146,7 @@ body{
 
 /* product pagina styles */
 
-.backgroundProduct{
+.backgroundProduct {
     background-image: url('images/Limoncello_Mockup.jpg');
     background-size: cover;
     background-position: center;
@@ -216,7 +221,7 @@ body{
     top: 30vh;
     left: 21vw;
     width: 55vw;
-    height: 40vh;
+    height: 50vh;
     background-color: #FFF3B9;
     border-radius: 10px;
     padding: 20px;
@@ -238,7 +243,9 @@ body{
 
 .button-container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin-bottom: -1%;
 }
 
 .button-container button {
@@ -259,7 +266,7 @@ body{
 .indicator-container {
     display: flex;
     justify-content: center;
-    margin-top: 21px;
+    position: relative;
 }
 
 .indicator {
@@ -284,4 +291,72 @@ body{
     flex: 1;
     padding: 10px;
     box-sizing: border-box;
+}
+
+/* contact styles */
+
+.textBoxContact{
+    width: 80%;
+    max-width: 500px;
+    margin: 5% 20%;
+    padding: 20px;
+    color: #2E572B;
+    text-align: left;
+}
+
+.message-box {
+    width: 35vw;
+    max-width: 35vw;
+    margin: -3% 20%;
+    padding: 20px;
+}
+
+.message-content {
+    margin-bottom: 20px;
+    color: #2E572B;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #3C8A3B;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #3C8A3B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#send-button:hover {
+    background-color: #F2BA00;
+}
+
+#email-input {
+    margin-top: 2%;
+    width: 20vw;
+    max-width: 20vw;
+    padding: 10px;
+    border: 1px solid #3C8A3B;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.textSmallContact{
+    margin-bottom: 2%;
+    color: #2E572B;
 }
