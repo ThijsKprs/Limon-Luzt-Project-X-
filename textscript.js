@@ -75,3 +75,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updatePrice();
 });
+
+/* dropdown bankopties */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const bankDropdown = document.getElementById('bank-dropdown');
+
+    bankDropdown.addEventListener('change', () => {
+        const selectedBank = bankDropdown.value;
+        console.log(`Geselecteerde bank: ${selectedBank}`);
+    });
+});
+
+/* betaal button */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const payButton = document.getElementById('betaalKnop');
+
+    payButton.addEventListener('click', () => {
+        alert('Bedankt voor je bestelling!');
+
+        location.reload();
+    });
+});

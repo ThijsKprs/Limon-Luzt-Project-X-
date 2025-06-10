@@ -297,6 +297,14 @@ a {
     box-sizing: border-box;
 }
 
+.beeldmerk{
+    height: 70vh;
+    position: absolute;
+    top: 16vh;
+    right: 10vw;
+    z-index: -1;
+}
+
 /* contact styles */
 
 .textBoxContact{
@@ -385,7 +393,7 @@ a {
     background-color: #3C8A3B;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
     text-align: center;
@@ -400,8 +408,9 @@ a {
     width: 50px;
     text-align: center;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #FFF3B9;
+    border-radius: 10px;
+    background-color: #F7D62F;
     padding: 5px;
     box-sizing: border-box;
     -moz-appearance: textfield;
@@ -442,8 +451,76 @@ input[type="number"]::-webkit-outer-spin-button {
     flex: 1;
     max-width: 300px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #FFF3B9;
+    background-color: #F7D62F;
+    border-radius: 10px;
     font-size: 14px;
     box-sizing: border-box;
+}
+
+.textBoxBestel{
+    width: 80%;
+    max-width: 500px;
+    margin: 10vh 20vw 3vh;
+    padding: 20px;
+    color: #2E572B;
+    text-align: left;
+}
+
+.textBoxGegevens{
+    width: 80%;
+    max-width: 500px;
+    margin: 0 20%;
+    padding: 20px;
+    color: #2E572B;
+    text-align: left;
+}
+
+.textBoxIdeal {
+    width: 80%;
+    position: absolute;
+    max-width: 500px;
+    right: 10vw;
+    top: 19vh;
+    padding: 20px;
+    color: #2E572B;
+    text-align: left;
+}
+
+.quantity-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#bank-dropdown {
+    padding: 10px;
+    border: 1px solid #FFF3B9;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #F7D62F;
+    cursor: pointer;
+}
+
+.betaalKnop {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3C8A3B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.betaalKnop:hover {
+    background-color: #2e6a2d;
+}
+
+.logoIdeal{
+    position: absolute;
+    top: 21vh;
+    right: 20vw;
+    height: 13vh
 }

@@ -23,7 +23,7 @@
         </ul>
     </nav>
 
-    <div class="textBoxContact">
+    <div class="textBoxBestel">
         <h2 style="margin-bottom: 2vh;">Bestel je Limon Luzt (1 liter)</h2>
         <div class="quantity-row">
             <p>Aantal:</p>
@@ -39,13 +39,52 @@
         </div>
     </div>
 
-    <div class="textBoxContact">
+    <div class="textBoxGegevens">
         <h2 style="margin-bottom: 2vh;">Voer je gegevens in</h2>
         <div class="input-row">
             <p>Voornaam:</p>
-            <input type="text" id="firstname-input" placeholder="Typ je voornaam..." />
+            <input type="text" id="firstname-input" placeholder="Vul je voornaam in..." />
+        </div>
+        <div class="input-row">
+            <p>Achternaam:</p>
+            <input type="text" id="firstname-input" placeholder="Vul je achternaam in..." />
+        </div>
+        <div class="input-row">
+            <p>E-mailadres:</p>
+            <input type="text" id="firstname-input" placeholder="Vul je e-mailadres in..." />
+        </div>
+        <div class="input-row">
+            <p>Postcode:</p>
+            <input type="text" id="firstname-input" placeholder="Vul je postcode in..." />
+        </div>
+        <div class="input-row">
+            <p>Woonplaats:</p>
+            <input type="text" id="firstname-input" placeholder="Vul je woonplaats in..." />
+        </div>
+        <div class="input-row">
+            <p>Adres:</p>
+            <input type="text" id="firstname-input" placeholder="Vul je adres in..." />
         </div>
     </div>
+
+    <div class="textBoxIdeal">
+        <h2 style="margin-bottom: 2vh;">Betalen met iDeal</h2>
+            <div class="quantity-row">
+                <p>Kies je bank:</p>
+                <select id="bank-dropdown">
+                    <option value="abn">ABN AMRO</option>
+                    <option value="rabobank">Rabobank</option>
+                    <option value="ing">ING</option>
+                    <option value="sns">SNS Bank</option>
+                    <option value="bunq">Bunq</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button id="betaalKnop" class="betaalKnop">Betalen</button>
+            </div>
+        </div>
+
+        <img class="logoIdeal" src="images/iDeal-Logo.png" alt="Logo iDeal">
 
 <script src="textscript.js"></script>
 </body>
