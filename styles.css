@@ -64,28 +64,6 @@ body {
 
 /* bestel nu button */
 
-@keyframes wobble {
-    0% {
-        transform: rotate(-15deg);
-    }
-
-    25% {
-        transform: rotate(-10deg);
-    }
-
-    50% {
-        transform: rotate(-15deg);
-    }
-
-    75% {
-        transform: rotate(-20deg);
-    }
-
-    100% {
-        transform: rotate(-15deg);
-    }
-}
-
 .bestelNu {
     transform: rotate(-10deg);
     position: fixed;
