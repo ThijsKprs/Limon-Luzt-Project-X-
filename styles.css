@@ -336,11 +336,13 @@ a {
 
 #user-input {
     flex: 1;
+    max-width: 300px;
     padding: 10px;
-    border: 1px solid #3C8A3B;
-    background-color: white;
-    border-radius: 5px;
+    border: 1px solid #FFF3B9;
+    background-color: #F7D62F;
+    border-radius: 10px;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 #send-button {
@@ -359,11 +361,12 @@ a {
 
 #email-input {
     margin-top: 2%;
-    width: 20vw;
-    max-width: 20vw;
+    flex: 1;
+    width: 21vw;
     padding: 10px;
-    border: 1px solid #3C8A3B;
-    border-radius: 5px;
+    border: 1px solid #FFF3B9;
+    background-color: #F7D62F;
+    border-radius: 10px;
     font-size: 14px;
     box-sizing: border-box;
 }
